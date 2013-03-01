@@ -1,7 +1,8 @@
 import org.newdawn.slick.*;
 
 public class MiniDF extends BasicGame {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SlickException
+    {
         AppGameContainer app = new AppGameContainer(new MiniDF());
 
         app.setDisplayMode(640, 480, false);

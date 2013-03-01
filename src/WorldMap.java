@@ -1,15 +1,6 @@
 import java.util.*;
 
 public class WorldMap {
-    public enum BlockType {
-        EMPTY, STONE, GRASS, DIRT, SAND, WATER,
-            STAIRS;
-
-        public boolean isSolid() {
-            return this != EMPTY;
-        }
-    }
-
     // Map is `nlayers` width*height flat layers
     final int width, height, nlayers;
     final int layer_size;

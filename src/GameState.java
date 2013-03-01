@@ -6,10 +6,11 @@ public class GameState {
 
     public Path findPathDwarf(Position start, Position end) {
         // TODO
+        return null;
     }
 
     public boolean moveDwarf(Dwarf d, int dx, int dy, int dl) {
-        Position targetPos = d.pos().add(dx, dy, dl);
+        Position targetPos = d.pos.add(dx, dy, dl);
         BlockType targetBlock = map.getBlock(targetPos);
         targetPos.l -= 1;
         BlockType floorBlock = map.getBlock(targetPos);
@@ -17,5 +18,8 @@ public class GameState {
         if (targetBlock.isSolid()) {
             return false;
         }
+
+        // TODO
+        return true;
     }
 }
